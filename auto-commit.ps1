@@ -6,13 +6,12 @@ param(
     [string]$commitMessage = "자동 커밋 - $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
 )
 
-$repoPath = "C:\Users\PC\Desktop\바이브코딩\cursor"
-
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host " VoiMeow 자동 커밋 & 푸시 시작" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 
-Set-Location $repoPath
+# 스크립트가 있는 폴더를 작업 디렉토리로 설정
+Set-Location $PSScriptRoot
 
 # 변경사항 확인
 $statusOutput = git status --porcelain
