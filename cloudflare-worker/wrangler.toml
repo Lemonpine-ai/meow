@@ -1,0 +1,7 @@
+name = "voimeow-chatbot-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+# 환경변수는 Cloudflare 대시보드에서 설정하세요
+# OPENAI_API_KEY = "your-api-key-here"
